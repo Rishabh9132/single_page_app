@@ -2,12 +2,12 @@ myapp.config(function($urlRouterProvider,$stateProvider)
 {
 
 
-	 $urlRouterProvider.otherwise('/login');
+	 $urlRouterProvider.otherwise('/home');
 
 	 $stateProvider
 
-	 .state('login',{
-	 	url : '/login',
+	 .state('home',{
+	 	url : '/home',
 	 	 templateUrl: 'assets/templates/single.html'
 
 	 })
