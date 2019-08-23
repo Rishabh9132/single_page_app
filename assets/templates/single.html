@@ -1,0 +1,57 @@
+
+<div ng-controller="login">
+
+
+	<div>
+		<img src="assets/images/blue-ocean.jpg" alt="deal-update" id="deal-update">
+		<hr>
+	</div>
+		
+<div class="row">
+
+	<div class="col-md-3"></div>
+
+	<div class="col-md-6">
+
+		<h1>Add a Deal</h1>
+
+		<form>
+
+			<div class="form-group">		
+			<label>Name:</label>
+			<input class="form-control" type="text" ng-model="deal.name">
+			<label>Email:</label>
+			<input type="text" class="form-control" ng-model="deal.email">
+			<label>Company</label>
+			<input type="text" class="form-control" ng-model="deal.company">
+			<label>Mobile</label>
+			<input type="text" class="form-control" ng-model="deal.phone">
+			<button ng-click="add()">Add deal</button>
+
+			</div>
+
+
+		</form>
+		</div>
+		<div class="col-md-3"></div>
+		</div>
+
+
+
+	<div class="container">
+		<div class="row">
+
+
+			<div class="col-md-3 deal-block" ng-repeat="item in data">
+
+				<img src="assets/images/deal-update.jpg" alt="deal-profile" class="thumbnail image-sort">
+				<h2>{{item.name}}</h2>
+				<h4>{{item.email}}</h4>
+				<h4>{{item.phone}}</h4>
+				<h4>{{item.company}}</h4>
+
+			</div>
+		</div>
+	</div>
+
+</div>

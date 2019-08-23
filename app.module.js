@@ -1,0 +1,1 @@
+const myapp = angular.module('crud',['ui.router','ui.bootstrap']);
