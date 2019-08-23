@@ -1,6 +1,7 @@
 
 myapp.controller('login',function($scope,$http){
 
+	$scope.dealAdd = false;
 	console.log("in login function");
 	$scope.deal = {};
 
@@ -19,6 +20,10 @@ myapp.controller('login',function($scope,$http){
 		console.log("in deal");
 		$scope.data.push($scope.deal);
 		$scope.deal = {};
+	}
+
+	$scope.delete = function(ind){
+		$scope.data.splice(ind,1);
 	}
 
 

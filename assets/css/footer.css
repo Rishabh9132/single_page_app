@@ -83,3 +83,9 @@ ul, ol {
     margin: 5px 0 0 75%;
 
 }
+
+.cross{
+
+    float: right;
+    margin: 5px;
+}
